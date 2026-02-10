@@ -1,0 +1,15 @@
+# Build Artifacts
+/target
+/dist
+
+# IDE
+# Jetbrains
+.idea
+*.iml
+*.iws
+# VS Code
+.vscode/
+
+# Misc / OS
+.DS_Store
+Thumbs.db

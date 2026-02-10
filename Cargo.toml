@@ -1,0 +1,22 @@
+[package]
+name = "music-bot"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.101"
+async-trait = "0.1.89"
+chrono = "0.4.43"
+eframe = "0.33.3"
+egui = "0.33.3"
+egui_extras = { version = "0.33.3", features = ["all_loaders"] }
+open = "5.3.3"
+reqwest = { version = "0.12.28" }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+serenity = { version = "0.12.5", default-features = false, features = ["client", "gateway", "rustls_backend", "model", "cache"] }
+songbird = { version = "0.5.0", features = ["builtin-queue", "driver", "gateway"] }
+# Required format readers for songbird
+symphonia = { version = "0.5.5", features = ["ogg", "isomp4"] }
+tokio = { version = "1.49.0", features = ["full"] }
+uuid = { version = "1.11.0", features = ["v4", "fast-rng", "macro-diagnostics"] }
