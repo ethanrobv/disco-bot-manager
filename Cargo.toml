@@ -20,3 +20,6 @@ songbird = { version = "0.5.0", features = ["builtin-queue", "driver", "gateway"
 symphonia = { version = "0.5.5", features = ["ogg", "isomp4"] }
 tokio = { version = "1.49.0", features = ["full"] }
 uuid = { version = "1.11.0", features = ["v4", "fast-rng", "macro-diagnostics"] }
+
+[patch.crates-io]
+audiopus_sys = { git = "https://github.com/ethanrobv/audiopus_sys.git", branch = "master" }
